@@ -52,5 +52,71 @@ namespace Todo.Tests
 
             Assert.IsInstanceOf(typeof(JArray), result);            
         }
+
+        [Test, Order(200)]
+        public async Task Respond_To_POST()
+        {
+            JObject payload = new JObject { ["title"] = "a todo" };
+
+            var result = await _controller.Post(payload);
+
+            Assert.IsInstanceOf(typeof(JObject), result);
+            Assert.AreEqual("a todo", result["title"].Value<string>());
+        }
+
+        [Test, Order(300)]
+        public async Task Respond_To_DELETE()
+        {
+            var result = await _controller.Delete(null);
+
+            Assert.IsInstanceOf(typeof(JArray), result);
+            Assert.IsEmpty(result);
+        }
+
+        [Test, Order(400)]
+        public async Task GET_After_DELETE_All_Is_Empty()
+        {
+            await _controller.Delete(null);
+            var result = await _controller.Get(null);
+
+            Assert.IsInstanceOf(typeof(JArray), result);
+            Assert.IsEmpty(result);
+        }
+
+        [Test, Order(500)]
+        public async Task POST_has_Url()
+        {
+            JObject payload = new JObject { ["title"] = "walk the dog" };
+
+            await _controller.Post(payload);
+            var result = await _controller.Get(null);
+
+            Assert.IsInstanceOf(typeof(JArray), result);
+            Assert.That(result.ToList().Count == 1);
+            Assert.AreEqual("walk the dog", result[0]["title"].Value<string>());
+        }
+
+        [Test, Order(600)]
+        public async Task New_Todo_Is_Not_Complete()
+        {
+            JObject payload = new JObject { ["title"] = "a new todo" };
+            
+            var result = await _controller.Post(payload);
+
+            Assert.IsInstanceOf(typeof(JObject), result);            
+            Assert.AreEqual(false, result["completed"].Value<bool>());
+        }
+
+        [Test, Order(700)]
+        public async Task Each_Todo_Has_A_Url()
+        {
+            JObject payload = new JObject { ["title"] = "another todo" };
+
+            await _controller.Post(payload);
+            var result = await _controller.Get(null);
+
+            Assert.IsInstanceOf(typeof(JArray), result);
+            Assert.That(result.All(i => i["url"].Type == JTokenType.String));
+        }
     }
 }
