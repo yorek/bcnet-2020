@@ -85,7 +85,7 @@ begin
 
 	-- delete all
 	if (@payload = '' or @payload is null) begin;
-		delete from dbo.[todos];
+		delete from web.[todos];
 		return;
 	end
 
@@ -145,7 +145,7 @@ begin
 	output 
 		inserted.id into @ids
 	from
-		dbo.[todos] t
+		web.[todos] t
 	inner join
 		cte c on t.id = c.id
 	;
