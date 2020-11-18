@@ -28,8 +28,10 @@ namespace Todo.Tests
             var loggerFactory = LoggerFactory.Create(b => b.AddConsole());
             var logger = loggerFactory.CreateLogger<TodoController>();
 
-            // Create In-Memory configuration
-            var connectionString = Environment.GetEnvironmentVariable("ConnectionString");
+            // This connection string  will be used by the API to access Azure SQL database
+            var connectionString = Environment.GetEnvironmentVariable("ConnectionString"); 
+
+            // Create In-Memory configuration            
             var inMemoryConfiguration = new Dictionary<string, string>()
             {
                 { "ConnectionStrings:AzureSQL", connectionString }                
