@@ -34,4 +34,24 @@ Slide deck used in the session, with more details and links of the libraries and
 
 ### Recording
 
-Session has been recorded and will be made available on YouTube soon.
+Full recording of the session is available here:
+
+[![Youtube Video Screenshot](./Docs/youtube-screenshot.png)](https://www.youtube.com/watch?v=sWgUItG2beE)
+
+- Intro (0:00)
+- Book - Practical Azure SQL for Modern Developers (1:34)
+- Session and Project description (2:39)
+- Creating REST API (8:10)
+- Azure SQL JSON Support (22:45)
+- Connect Azure SQL to REST API (32:09)
+- Test GET Method (34:25)
+- Dynamic Schema options (37:35)
+- Running Todo Backend API test suite (39:45)
+- Implementing Database Test with NUnit (42:52)
+- Add Database Deployment via DBUp (50:10)
+- Deploy solution using GitHub Actions (57:54)
+- Demo of complete solution (01:05:17) 
+- Questions & Answers (01:09:37)
+
+
+
