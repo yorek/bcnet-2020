@@ -38,20 +38,20 @@ Full recording of the session is available here:
 
 [![Youtube Video Screenshot](./Docs/youtube-screenshot.png)](https://www.youtube.com/watch?v=sWgUItG2beE)
 
-- Intro (0:00)
-- Book - Practical Azure SQL for Modern Developers (1:34)
-- Session and Project description (2:39)
-- Creating REST API (8:10)
-- Azure SQL JSON Support (22:45)
-- Connect Azure SQL to REST API (32:09)
-- Test GET Method (34:25)
-- Dynamic Schema options (37:35)
-- Running Todo Backend API test suite (39:45)
-- Implementing Database Test with NUnit (42:52)
-- Add Database Deployment via DBUp (50:10)
-- Deploy solution using GitHub Actions (57:54)
-- Demo of complete solution (01:05:17) 
-- Questions & Answers (01:09:37)
+- Intro ([0:00](https://www.youtube.com/watch?v=sWgUItG2beE&t=0s))
+- Book - Practical Azure SQL for Modern Developers ([1:34](https://www.youtube.com/watch?v=sWgUItG2beE&t=94s))
+- Session and Project description ([2:39](https://www.youtube.com/watch?v=sWgUItG2beE&t=159s))
+- Creating REST API ([8:10](https://www.youtube.com/watch?v=sWgUItG2beE&t=490s))
+- Azure SQL JSON Support ([22:45](https://www.youtube.com/watch?v=sWgUItG2beE&t=1365s)]
+- Connect Azure SQL to REST API ([32:09](https://www.youtube.com/watch?v=sWgUItG2beE&t=1929s))
+- Test GET Method ([34:25](https://www.youtube.com/watch?v=sWgUItG2beE&t=2065s))
+- Dynamic Schema options ([37:35](https://www.youtube.com/watch?v=sWgUItG2beE&t=2255s))
+- Running Todo Backend API test suite ([39:45](https://www.youtube.com/watch?v=sWgUItG2beE&t=2385s))
+- Implementing Database Test with NUnit ([42:52](https://www.youtube.com/watch?v=sWgUItG2beE&t=2572s))
+- Add Database Deployment via DBUp ([50:10](https://www.youtube.com/watch?v=sWgUItG2beE&t=3010s))
+- Deploy solution using GitHub Actions ([57:54](https://www.youtube.com/watch?v=sWgUItG2beE&t=3474s))
+- Demo of complete solution ([01:05:17](https://www.youtube.com/watch?v=sWgUItG2beE&t=3917s)) 
+- Questions & Answers ([01:09:37](https://www.youtube.com/watch?v=sWgUItG2beE&t=4177s))
 
 
 
